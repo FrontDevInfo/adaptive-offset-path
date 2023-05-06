@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+}
+
+.ball {
+    offset-path: path(var(--path));
+    offset-rotate: auto 180deg;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    offset-distance: 10%;
+    animation: travel 10s infinite;
+    z-index: 20;  
+}
+
+
+@keyframes travel {
+from {
+  offset-distance: 0%;
+}
+to {
+  offset-distance: 100%;
+}
+}

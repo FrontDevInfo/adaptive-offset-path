@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" >
+    <title>Document</title>
+    
+</head>
+<body>
+
+      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <path
+          fill="none"
+          stroke="lightgrey"
+          d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+         
+        <circle r="5" fill="red" opacity="0">
+          <animateMotion
+            dur="10s"
+            repeatCount="indefinite"
+            keyPoints="0;1;0" keyTimes="0;0.5;1"
+            path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+            <animate repeatCount="indefinite" attributeName="opacity" dur="10s" values="1; 1; 0; 1" keyTimes="0; 0.6; 0.8; 1" />
+        </circle>
+      </svg>
+</body>
+</html>
